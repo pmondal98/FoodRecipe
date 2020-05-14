@@ -15,7 +15,7 @@ const Recipe=({title,calories,image, ingredients})=>{
          <img className="card-img-top" src={image} alt={title}/>
             <div className="card-body">
                <h3 className="card-title">{title}</h3>  
-              <h5>Calorie Count :- {calories.toFixed(2)}</h5>              
+               <h5 style={{border: '1px solid black', borderBox : 'border-box'}}>Calorie Count :- {calories.toFixed(2)}</h5>              
             </div>
             <div className="card-footer">
             <Button variant="primary" onClick={handleShow}>
