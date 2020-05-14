@@ -28,13 +28,13 @@ const Recipe=({title,calories,image, ingredients})=>{
                   <Modal.Title>{title}</Modal.Title>
                </Modal.Header>
                <Modal.Body scrollable={true}>
-                  <ol className="card-text">
+                  <ul className="card-text">
                      {ingredients.map(ingredient =>(                     
                      <li>
                         {ingredient.text}
                      </li>
                      ))}
-                  </ol>  
+                  </ul>  
                </Modal.Body>
                <Modal.Footer>
                <Button variant="secondary" onClick={handleClose}>
