@@ -19,14 +19,28 @@ h1{
   border: none;
   padding: 10px;
   margin: 5% 0%;  
+  border-radius:5px;
 }
 
 .search-button{
-  background: lightcoral;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  outline: none;
   border: none;
   padding: 10px 20px;
-  color: white;
+  color: black;
+  font-weight: bold;
   margin: 5% 0%;  
+  border-radius:5px;
+}
+.search-button:hover{
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.search-button:active{
+  outline: none;
+  border: none;
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 
 .recipes{
@@ -93,3 +107,31 @@ h1{
 .head {
   text-align: center;
 }
+
+/* Spinner 
+
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
