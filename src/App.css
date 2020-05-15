@@ -40,7 +40,7 @@ h1{
 .search-button:active{
   outline: none;
   border: none;
-  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);  
 }
 
 .recipes{
@@ -106,4 +106,110 @@ h1{
 
 .head {
   text-align: center;
+}
+.btni{
+  border-radius: 5px;
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+  outline: none;
+  border: none;
+  color: black;
+  font-weight: bold;  
+	padding: 10px;
+}
+.search-button:hover{
+  outline: none;
+  border: none;
+}
+.search-button:active{
+  outline: none;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+
+.btning {
+background: transparent;
+color: #000;
+border: 3px solid #000;
+border-radius: 50px;
+padding: 0.2rem 1rem;
+font: 15px "Margarine", sans-serif;
+font-weight: bold;
+outline: none;
+cursor: pointer;
+position: relative;
+transition: 0.2s ease-in-out;
+letter-spacing: 2px;
+background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.button__wrapper {
+display: inline-block;
+position: relative;
+width: 200px;
+height: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+outline: none;
+}
+
+.button-jittery button {
+animation: jittery 4s infinite;
+outline: none;
+}
+.button-jittery button:hover {
+  animation: heartbeat 0.2s infinite;
+  outline: none;
+}
+
+
+@keyframes jittery {
+5%,
+50% {
+  transform: scale(1);
+}
+10% {
+  transform: scale(0.9);
+}
+15% {
+  transform: scale(1.15);
+}
+20% {
+  transform: scale(1.15) rotate(-5deg);
+}
+25% {
+  transform: scale(1.15) rotate(5deg);
+}
+30% {
+  transform: scale(1.15) rotate(-3deg);
+}
+35% {
+  transform: scale(1.15) rotate(2deg);
+}
+40% {
+  transform: scale(1.15) rotate(0);
+}
 }
