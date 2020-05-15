@@ -18,10 +18,11 @@ const Recipe=({title,calories,image, ingredients})=>{
                <h5 style={{border: '1px solid black', borderBox : 'border-box'}}>Calorie Count :- {calories.toFixed(2)}</h5>              
             </div>
             <div className="card-footer">
-            <Button variant="primary" onClick={handleShow}>
+            <Button onClick={handleShow} 
+            style={{backgroundImage: 'linear-gradient(60deg, #abecd6 0%, #fbed96 100%)',outline: 'none',border: 'none', color: 'black', fontWeight: 'bold'}}>
                See Ingredients
             </Button>            
-            </div>    
+            </div>
 
             <Modal show={show} onHide={handleClose} centered={true}>
                <Modal.Header closeButton>
